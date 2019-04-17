@@ -1,0 +1,77 @@
+header {
+    /* position: fixed; */
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 35px;
+    background-color: white;
+}
+.hoshinoya img {
+    height:60px;
+    margin-right:20px;
+}
+main{
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 130px;
+}
+.home div {
+    position: absolute;
+    border-right: 600px solid transparent;
+    border-bottom: 150px solid palegoldenrod;
+    border-left: 600px solid transparent; 
+}
+.pillar {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.pillar li {
+    width: 100px;
+    height: 400px;
+    background-color: palegoldenrod;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.destinations {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.destinations img {
+    height: 100px;
+    margin-left: 850px;
+    margin-bottom: 300px;
+}
+.destinations h1 {
+    margin-right: 100px;
+    margin-top: 60px;
+    font-family: "Lucida Sans", sans-serif;
+}
+.destinations p {
+    width: 200px;
+    height: 300px;
+    font-size: 15px;
+    font-family: "Lucida Sans", sans-serif; 
+}
+.destinations span {
+    width: 40px;
+    height: 40px;
+    background-color: silver;
+}
+.last p {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 50px;
+    background-color: palegoldenrod;
+}
