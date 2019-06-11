@@ -1,371 +1,116 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 80px;
+   font-family: 'Arial Rounded MT Bold',sans-serif;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-}
-.logo img {
+.icon {
+    width: 50px;
     height: 50px;
-    margin-right: 50px;
-    padding: 10px;
+    padding: 15px 0 0 30px;
 }
-header .header-right {
+.list {
     display: flex;
-    align-items: center;
+    list-style: none;
 }
-.header-right p {
-    margin-right: 50px;
+.list li {
+    margin-left: 20px;
+    color: black;
+    padding: 25px 0 0 30px;
 }
-header-right p:last-child {
-    margin-right:0;
+.fas {
+    margin-right: 10px;
 }
-
+.fas:hover {
+    color: red;
+}
+main p {
+    padding-left: 180px;
+}
+.fa-star {
+    color: rgba(255, 238, 0, 0.938);
+    display: none;
+}
 main {
-    background-image: url(../img/mainimg.jpg);
+    background-image: url(../img/top_bannerbg_hoshinoya@2x.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    font-size: 90px;
-    padding: 200px 100px 0;
+    height: 88vh;
+    opacity: 0.7;
 }
-.name {
-    font-size:  100px;
-    margin-left: 100px;
-    color: white;
-    padding-top: 200px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+    padding: 250px 0 0 180px;
+    font-family: 'Bradley Hand',sans-serif;
+    font-size: 80px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 2px black;
 }
-.box {
-    width: 800px;
-    height: 500px;
-}
-.box .anime {
-    display: flex;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 50%;
-    animation: light 5s infinite;
-    margin-left: 50px;
-}
-.box .anime2 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 50%;
-    animation: light 3s infinite;
-    margin-left: 50px;
-}
-.box .top {
-    margin-top: -200px;
-}
-.box .bottom {
-    margin-top: 100px;
-    margin-left: 300px;
-}
-.box .middle {
-    margin-top: -50px;
-}
-.box .anime3 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 50%;
-    animation: light 7s infinite;
-    margin-left: 500px;
-}
-.box .anime4 {
-    display: flex;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 50%;
-    animation: light 4s infinite;
-    margin-left: 820px;
-}
-.box .anime5 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 50%;
-    animation: light 3s infinite;
-    margin-left: 1200px;
-}
-@keyframes light {
-    0% {
-        background-color: rgba(255, 255, 255, 0.377);
-    }
-    20% {
-        background-color: rgba(255, 255, 255, 0);
-    }
-    60% {
-        background-color: rgba(255, 255, 255, 0.377);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0);
-    }
-}
-section{
-    text-align: center;
-    background-color: white;
-    width: 100%;
-    padding-top: 20px;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-}
-.hotel-logo {
+.moon,
+.kai,
+.omo,
+.rhorse {
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
-    margin-top: 30px;
-}
-.hotel-logo img {
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    margin-bottom: 50px; 
-}
-.hotel-logo img:hover {
-    background-color: white;
-    width: 150px;
-    height: 150px;
-}
-sidebar  {
-    background-color: darkblue;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    font-size: 30px;
-    color: white;
-    width: 100%;
-    height: 800px;
-    padding: 40px 0 40px 0;
-    animation: bagground 7s ease;
-}
-.img {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.bar{
-    width: 2px;
-    height: 180px;
-    background-color:white; 
-    margin-left: 100px;
-}
-.bar2{
-    width: 2px;
-    height: 50px;
-    background-color:white; 
-}
-.bar3{
-    width: 2px;
-    height: 100px;
-    background-color:white; 
-}
-.bar4{
-    width: 2px;
-    height: 150px;
-    background-color:white; 
-}
-.bar5{
-    width: 2px;
-    height: 70px;
-    background-color:white; 
-    margin-right: 50px;
-}
-.bar .anime6 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 217, 0, 0.322);
-    border-radius: 50%;
-    animation:  5s ease;
-    margin-left: -50px;
-    margin-top: 130px;
-}
-.bar2 .anime7 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 217, 0, 0.322);
-    border-radius: 50%;
-    animation: light 3s ease;
-    margin-left: -50px;
     margin-top: 20px;
 }
-
-.maru {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: yellow;
+.left {
+    width: 50%;
+}
+.left img {
+    width: 100%;
+    height: 500px;
+}
+.right {
+    width: 50%;
+}
+.right img {
+    width: 100%;
+    height: 500px;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    padding: 20px 0 0 100px;
+}
+.box {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 25px;
-} 
-.bar3 .anime8 {
+    margin-left: 100px;
+    padding-top: 100px;
+}
+.inputbox {
     display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 217, 0, 0.322);
-    border-radius: 50%;
-    animation: light 5s ease;
-    margin-left: -50px;
-    margin-top: 70px;
+    flex-direction: column;
+    margin-left: 100px;
+    font-size: 30px;
 }
-.bar4 .anime9 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 217, 0, 0.322);
-    border-radius: 50%;
-    animation: light 3s ease;
-    margin-left: -50px;
-    margin-top: 120px;
+.btn {
+    background: olive;
+    border-radius: 5px;
+    color: whitesmoke;
 }
-.bar5 .anime10 {
-    display: flex;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 217, 0, 0.322);
-    border-radius: 50%;
-    animation: light 3s ease;
-    margin-left: -50px;
-    margin-top: 45px;
+.concept {
+    margin: 50px 0 0 100px;
+    font-size: 18px;
 }
-@keyframes light {
-    0% {
-        background-color: rgba(255, 217, 0, 0.322);
-    }
-    20% {
-        background-color: rgba(255, 217, 0, 0);
-    }
-    60% {
-        background-color: rgba(255, 217, 0, 0.322);
-    }
-    100% {
-        background-color: rgba(255, 217, 0, 0);
-    }
+.text {
+    font-size: 16px;
+    padding-top: 20px;
 }
-.bg {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
+.gaiyo {
+    padding-top: 20px;
 }
-@keyframes bagground {
-    0% {
-        background-color: rgb(0, 0, 139);
-    }
-    10% {
-        background-color: rgba(0, 0, 139, 0.849);
-    }
-    20% {
-        background-color: rgba(0, 0, 139, 0.582);
-    }
-    30% {
-        background-color: rgba(226, 119, 57, 0.363);
-    }
-    40% {
-        background-color: rgba(240, 114, 41, 0.527);
-    }
-    50% {
-        background-color: rgba(240, 114, 41, 0.87);
-    }
-    60% {
-        background-color: rgba(240, 98, 16, 0.877);
-    }
-    70% {
-        background-color: rgba(240, 114, 41, 0.527);
-    }
-    80% {
-        background-color: rgba(226, 119, 57, 0.363);
-    }
-    90% {
-        background-color: rgba(0, 0, 139, 0.582);
-    }
-    100% {
-        background-color: rgb(0, 0, 139);
-    } 
+span {
+    background: linear-gradient(transparent 50%, orange 50%);
 }
-.bg img {
-    width: 200px;
-    height: 200px;
-    margin: 50px;
-    border-radius: 50%;
-    border: 5px solid white;
+.font {
+    font-size: 15px;
+    margin-top: 30px;
 }
-
-@media screen and  (min-width: 960px) and (max-width: 1400px) {
-    .box {
-        width: 0px;
-        background-color: red;
-    }
-    .box .anime4,
-    .box .anime5 {
-        margin-left: 0;
-        background-color: transparent;
-    }
-
-    .maru {
-        background-color: transparent;
-    }
+.bookbtn {
+    margin-left:70px;
+    background: olive;
+    border-radius: 5px;
+    color: whitesmoke;
 }
-  @media screen and  (max-width: 960px) {
-    .box .anime4,
-    .box .anime5 {
-        margin-left: 0;
-        background-color: transparent;
-    }
-
-  }
-  
-  @media screen and (max-width: 600px) {
-    
-    header {
-        color: transparent;
-    }
-    .name {
-        margin-left: 0;
-    }
-    .box .anime4,
-    .box .anime5 {
-        margin-left: 0;
-        background-color: transparent;
-    }
-    section {
-        width: 500px;
-    }
-    .hotel-logo {
-        display: flex;
-        justify-content: space-around; 
-        margin: 0;
-    }
-  }
