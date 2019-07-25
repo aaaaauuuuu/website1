@@ -1,0 +1,12 @@
+#text {
+  width: 200px;
+  height: 30px;
+  background: rgba(255, 192, 203, 0.445);
+}
+#btn {
+  width: 60px;
+  height: 35px;
+  background: red;
+  color: white;
+  font-size: 15px;
+}
